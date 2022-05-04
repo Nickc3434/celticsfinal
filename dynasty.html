@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Load BootStrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<!-- Import Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+	<!-- Import Stylesheets -->
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/dynasty.css">
+
+	<!-- Icon -->
+	<link rel="icon" href="images/logoimage.jpg">
+	<title>Celtics History</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<!-- Link Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="clearfix">
+		<a href="index.html"><img id="logoimage"img src="images/logoimage.jpg" alt=""></a>
+		<h2>The start of a dynasty</h2>
+	</header>
+	
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="index.html">Home</a>
+            </li>
+           <li class="nav-item">
+              <a class="nav-link" href="dynasty.html">Dynasty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facts.html">Facts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="highlights.html">Highlights</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+	<nav id="mobilemenu"></nav>
+	<main>
+	<!-- End Navbar -->
+		
+		<h1>The start of the dynasty</h1>
+		<!-- Image Container -->
+		<div class="sd-img-container">
+            <div class="image">
+                <a href="https://www.nba.com/celtics/history/legends/red-auerbach" target="_blank"><img src="images/red_auerbach_russelljpg.jpg" alt=""></a>
+                <p>The start of the dynasty in the 60s </p>>
+            </div>
+            <div class="image">
+                <a href="https://www.celticslife.com/2014/06/boston-celtics-all-decade-teams-1980s.html" target="_blank"><img src="images/80sdynasty.jpg" alt=""></a>
+                <p>The continuation of the dynasty in the 80s</p>
+            </div>
+            <div class="image">
+                <a href="https://www.celticslife.com/2014/07/boston-celtics-all-decade-teams-2000s.html" target="_blank"><img src="images/big3-2008.jpg" alt=""></a>
+                <p>2000s and 2010s super team and success</p>
+            </div>
+        </div>
+ 
+    <!-- Section on the right side -->
+    <section>
+        <!-- Info Container -->
+        <div class="info-container">
+            <div class="info-item">
+                <h1>Celtics in the 60s</h1>
+                <p>The start of the celtics dynasty was in the 60s. With star players like Bob Cousy and Bill Russell quickly arose as the best team in the league. Throughout 1957 and 1969 the celtics won 11 championships. </p>
+                    
+            </div>
+            <div class="info-item">
+                <h1>Celtics in the 80s</h1>
+                <p>The next part of the celtics history was the 80s. With coach K.C Jones the celtics had a powerhouse with Larry Bird, Robert Parish, Dennis Johnson, Danny Ainge, and Kevin McHale. </p>
+                
+                <p> This was an incredible decade for the Celtics as they won 3 championships and established themselves as the best Franchise ever. Larry Bird won 3 straight MVPs and established himself as the best player in the league for several years. Their rivalry with the Lakers was unmatched and was one of the best things to witness on television. </p>
+            </div>
+            <div class="info-item">
+                <h1>Celtics in the 2000s and 2010s</h1>
+                <p> The final part of this is the celtics in the 2000s and 2010s leading up to today. The celtics in the early 2000s had it rough and weren't the best team. They had a lot of struggles and problems in the staff department. This all changed in 2007 when the celtics decided to pick up Kevin Garnett and Ray Allen to form a super team with already star player Paul Pierce and newly aquired guard Rajon Rondo. They had one of their best championship runs the next year in 2008 with Doc Rivers now as their head coach. </p>
+
+                <p> The celtics would make another finals appearence in 2010 but would end up losing to the lakers in 7. After this the team went down a dark path as the vets got old and it was time to move on. As Brad Stevens being promoted to the new head coach the celtics had some success in the playoffs but ultimalety would lose in first or second round. Today we have a new young coach in IME Udoka who is leading the 2nd seeded Celtics to a championship. </p>
+            </div>
+        </div>
+        <!-- End Info Container -->
+    </section>
+		<!-- End Image Container -->
+
+	<!-- Return to top script -->
+  	<div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+	</main>
+	<script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+	<script>
+        // When the user scrolls down 800px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+     
+         function scrollFunction() {
+           if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+             document.getElementById("cornerBtn").style.display = "block";
+           } else {
+             document.getElementById("cornerBtn").style.display = "none";
+           }
+         }
+     
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+     </script>
+	 <!-- Footer -->
+	<footer>
+		<p>&copy; <span id="copyright"></span> Nicholas Cervone</p>
+		<img class="footer-img" src="images/boston-celtics-celtics.gif">
+		<div class="footer-container">
+			<div class="footer-item"><a href="#"><p id="small-pg">About us</p></a></div>
+			<div class="footer-item"><a href="#"><p id="small-pg">Contact us</p></a></div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
